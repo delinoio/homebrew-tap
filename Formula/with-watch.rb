@@ -1,26 +1,26 @@
 class WithWatch < Formula
   desc "Watch command inputs and rerun commands when they change"
   homepage "https://github.com/delinoio/oss"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.4/with-watch-darwin-amd64.tar.gz"
-      sha256 "60b2bdbda9eb4d6dc3164e0202f380ed8b04671713b9e8ba1e8031007b69b52e"
+      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.5/with-watch-darwin-amd64.tar.gz"
+      sha256 "e84ea912bc0b3dd572603084275a8fd530248ca419a1274774f14657844831f4"
     else
-      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.4/with-watch-darwin-arm64.tar.gz"
-      sha256 "b3534630136e8d2ac821c51328c912a2e360cf9bba8193232a8cc0ed5168910a"
+      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.5/with-watch-darwin-arm64.tar.gz"
+      sha256 "63ebe74c07990198a7d8540a1add14e2d1bcc83a224498fddd2488c1c5661735"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.4/with-watch-linux-amd64.tar.gz"
-      sha256 "a56c7d112efe27a1035858f5b2acdac86b91ff3dbd6876fff10c11e8bf820943"
+      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.5/with-watch-linux-amd64.tar.gz"
+      sha256 "4f09bb3a39733eda0cee66cd6e8226e0ce196fd03d966eb83407999d6343b5e9"
     elsif Hardware::CPU.arm?
-      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.4/with-watch-linux-arm64.tar.gz"
-      sha256 "2040473a18fdcec081b984da40b1c86c203e7e10cf1e96ac88d2df580c1ee5a2"
+      url "https://github.com/delinoio/oss/releases/download/with-watch@v0.1.5/with-watch-linux-arm64.tar.gz"
+      sha256 "12b44b09a7940cd49d65e8427e3716baf223769e8d48f9d0cebf293be5edb1db"
     else
       odie "with-watch prebuilt distribution currently supports Linux amd64 and arm64 only"
     end
