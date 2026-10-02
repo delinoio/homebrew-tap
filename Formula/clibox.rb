@@ -1,17 +1,17 @@
 class Clibox < Formula
   desc "Native utilities for configuration, processes, and file workflows"
   homepage "https://oss.delino.io/clibox/"
-  version "0.3.4"
+  version "0.3.6"
   license "Apache-2.0"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/delinoio/oss/releases/download/clibox@v0.3.4/clibox-darwin-arm64.tar.gz"
-    sha256 "476f6689fb63bc804530d4167b6182b58aea2765b1f77f3b7b6862acb6c8a33f"
+    url "https://github.com/delinoio/oss/releases/download/clibox@v0.3.6/clibox-darwin-arm64.tar.gz"
+    sha256 "446f440ecc146de58765e26ca0cce3c91be7a6d924da737ac5b08fa3affd75d2"
   else
-    url "https://github.com/delinoio/oss/releases/download/clibox@v0.3.4/clibox-darwin-amd64.tar.gz"
-    sha256 "feb80232e8ba9cecf2edd3f94981f9cfaa3560e8325608c6511ffcdd7d47e2f8"
+    url "https://github.com/delinoio/oss/releases/download/clibox@v0.3.6/clibox-darwin-amd64.tar.gz"
+    sha256 "36abeddc29903502aef97daac6491fdccbcf51d1bdd4a7f412b0141394213f2a"
   end
 
   def install
