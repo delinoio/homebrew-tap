@@ -1,9 +1,9 @@
 class Runmoor < Formula
   desc "Local manager for disposable GitHub Actions runners"
   homepage "https://oss.delino.io/runmoor/"
-  url "https://github.com/delinoio/oss/releases/download/runmoor@v0.2.8/runmoor-darwin-arm64.tar.gz"
-  version "0.2.8"
-  sha256 "a4f3a2c50b27d6f2a7e58f866e3a75a594e42ad2c6536eb1007c7e8cd1bff5a6"
+  url "https://github.com/delinoio/oss/releases/download/runmoor@v0.2.9/runmoor-darwin-arm64.tar.gz"
+  version "0.2.9"
+  sha256 "fe27968a1890c06b5c81c59ff21c0484cb6075191ced1288e9a02586ef1eaaa0"
   license "Apache-2.0"
 
   depends_on arch: :arm64
