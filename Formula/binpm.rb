@@ -1,26 +1,26 @@
 class Binpm < Formula
   desc "Node-free binary package manager for release assets"
   homepage "https://github.com/delinoio/oss"
-  version "0.2.0"
-  license "MIT"
+  version "0.2.4"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.0/binpm-darwin-amd64.tar.gz"
-      sha256 "ee4d1e672fad47e1bd25c0118c22c3dc2c0920410dad3c74e2ae876031938921"
+      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.4/binpm-darwin-amd64.tar.gz"
+      sha256 "80aa0717c8b3d018313a9ee759caf28c59a4e2f6d2eab3e7864c5245d30c4e1a"
     else
-      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.0/binpm-darwin-arm64.tar.gz"
-      sha256 "9835d23178118bfce22d087f5d71e00ff4c5f528a1b5a82abd3cd489dc3ddda0"
+      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.4/binpm-darwin-arm64.tar.gz"
+      sha256 "d9be803cd197f772df2817992c10dad6193d224461e0318369ed71106797d85c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.0/binpm-linux-amd64.tar.gz"
-      sha256 "1362b3448a5fd27273434b7e9b7e6e461e63d5c7b31c666f4b94af8cfb23324e"
+      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.4/binpm-linux-amd64.tar.gz"
+      sha256 "09220c651a84591ebd4d81ea6561cd93260e7b44bf58698142200bf4d4640f14"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.0/binpm-linux-arm64.tar.gz"
-      sha256 "4edfcfda1532d6758ab7d0cc3129325bc4a461ae6f2b30ad08ff6f8db1fd91d6"
+      url "https://github.com/delinoio/oss/releases/download/binpm@v0.2.4/binpm-linux-arm64.tar.gz"
+      sha256 "8a884c9cf274707592b4e42e3aaff28907bd0a43d0e6bb8160a31a3ce56a2f79"
     else
       odie "binpm prebuilt distribution currently supports Linux amd64 and arm64 only"
     end
